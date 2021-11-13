@@ -1,144 +1,128 @@
 <template>
-  <div class="app">
-    <div class="snia">
-      <div class="sa">
-        <img
-          src="https://cdn.krjogja.com/wp-content/uploads/2016/06/HONDA7-1.png"
-          height="125px"
-          width="240px"
-        />
-      </div>
-      <div class="tu">
-        <h1 style="text-align: center">
-          Selamat Datang di <br />
-          <span><b>~ PT.ASTRA ANDA MOTOR ~</b></span>
-        </h1>
-      </div>
-    </div>
-
-    <div class="pr">
-      <div class="border1 row">
-        <h1>Form Motor</h1>
-        <form @submit.prevent="add">
-          <input type="hidden" v-model="form.id" />
-          <label for=""><b>Nama Motor:</b></label
-          ><br />
-          <input
-            type="text"
-            v-model="form.motor"
-            placeholder=" Masukan Merk Motor"
-          /><br />
-          <label for=""><b>CC:</b></label
-          ><br />
-          <input
-            type="text"
-            v-model="form.cc"
-            placeholder="Masukan CC Motor"
-          /><br />
-          <label for=""><b>Tahun Produksi:</b></label
-          ><br />
-          <input
-            type="text"
-            v-model="form.tahun"
-            placeholder="Masukan Tahun Produksi Motor"
-          /><br />
-          <label for=""><b>Gambar:</b></label
-          ><br />
-          <input
-            type="text"
-            v-model="form.gambar"
-            placeholder="Masukan Link Gambar Motor"
-          /><br />
-          <label for=""><b>Harga</b></label
-          ><br />
-          <input
-            type="text"
-            v-model="form.harga"
-            placeholder="Masukan Harga Motor"
-          /><br />
-          <button type="submit" v-show="!updateSubmit" style="margin: auto">
-            <b> Lihat Motor </b>
-          </button>
-          <!-- jika tidak update maka tombol update tidak muncul -->
-          <button type="button" v-show="updateSubmit" @click="update(form)">
-            <b> Update </b>
-          </button>
-          <!-- jika tombol edit di klik maka tombol add akan berubah menjadi update -->
-        </form>
-        <br />
+  <div class="up">
+    <div class="app">
+      <div class="snia">
+        <div class="sa">
+          <img
+            src="https://cdn.krjogja.com/wp-content/uploads/2016/06/HONDA7-1.png"
+            height="125px"
+            width="240px"
+          />
+        </div>
+        <div class="tu">
+          <h1 style="text-align: center">
+            Selamat Datang di <br />
+            <span><b>~ PT.ASTRA ANDA MOTOR ~</b></span>
+          </h1>
+        </div>
       </div>
 
-      <div class="border2">
-        <h1>Tabel Motor</h1>
-        <div id="app1" class="row">
-          <b
-            ><label for="quantity">No:</label>
+      <div class="pr">
+        <!-- <div class="border1 row">
+          <h1>Form Motor</h1>
+          <form @submit.prevent="add">
+            <input type="hidden" v-model="form.id" />
+            <label for=""><b>Nama Motor:</b></label
+            ><br />
             <input
-              type="number"
-              id="quantity"
-              name="quantity"
-              min="1"
-              max="5"
-            />
-          </b>
-        </div>
+              type="text"
+              v-model="form.motor"
+              placeholder=" Masukan Merk Motor"
+            /><br />
+            <label for=""><b>CC:</b></label
+            ><br />
+            <input
+              type="text"
+              v-model="form.cc"
+              placeholder="Masukan CC Motor"
+            /><br />
+            <label for=""><b>Tahun Produksi:</b></label
+            ><br />
+            <input
+              type="text"
+              v-model="form.tahun"
+              placeholder="Masukan Tahun Produksi Motor"
+            /><br />
+            <label for=""><b>Gambar:</b></label
+            ><br />
+            <input
+              type="text"
+              v-model="form.gambar"
+              placeholder="Masukan Link Gambar Motor"
+            /><br />
+            <label for=""><b>Harga</b></label
+            ><br />
+            <input
+              type="text"
+              v-model="form.harga"
+              placeholder="Masukan Harga Motor"
+            /><br />
+            <button type="submit" v-show="!updateSubmit" style="margin: auto">
+              <b> Lihat Motor </b>
+            </button>
+            <button type="button" v-show="updateSubmit" @click="update(form)">
+              <b> Update </b>
+            </button>
+          </form>
+          <br />
+        </div> -->
 
-        <div id="app2">
-          <b><label for="quantity">Nama:</label> <input type="text" /></b>
-        </div>
+        <div class="border2">
+          <h1 style="text-align: center"><b>Info Motor </b></h1>
 
-        <table>
-          <thead>
-            <tr>
-              <th>No</th>
-              <th style="width: 100px">Nama Motor</th>
-              <th style="width: 50px">CC</th>
-              <th style="width: 100px">Tahun Produksi</th>
-              <th>Gambar</th>
-              <th>Harga</th>
-              <th style="width: 100px">Aksi</th>
-            </tr>
-          </thead>
-          <tbody v-for="user in users" :key="user.id">
-            <tr>
-              <td>{{ user.id }}</td>
-              <td>{{ user.motor }}</td>
-              <td>{{ user.cc }}</td>
-              <td>{{ user.tahun }}</td>
-              <td>
-                <img :src="user.gambar" width="140px" height="100px" />
-              </td>
-              <td>
-                Rp. {{ user.harga.replace(/\B(?=(\d{3})+(?!\d))/g, ".") }}
-              </td>
-              <td>
-                <button
-                  style="
-                    background-color: rgb(117, 6, 6);
-                    color: white;
-                    padding: 5px;
-                    border: 1px solid white;
-                  "
-                  @click="perpanjang(user)"
-                >
-                  edit</button
-                ><br />
-                <button
-                  style="
-                    background-color: rgb(236, 43, 43);
-                    color: white;
-                    width: 80px;
-                    padding: 5px;
-                    border: 1px solid white;
-                  "
-                  @click="kembali(user)"
-                >
-                  hapus
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Motor</th>
+                <th>CC</th>
+                <th>Tahun Produksi</th>
+                <th>Gambar</th>
+                <th>Harga</th>
+                <!-- <th style="width: 100px">Aksi</th> -->
+              </tr>
+            </thead>
+            <tbody v-for="user in users" :key="user.id">
+              <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.motor }}</td>
+                <td>{{ user.cc }}</td>
+                <td>{{ user.tahun }}</td>
+                <td>
+                  <img :src="user.gambar" width="140px" height="100px" />
+                </td>
+                <td>
+                  Rp. {{ user.harga.replace(/\B(?=(\d{3})+(?!\d))/g, ".") }}
+                </td>
+                <!-- <td>
+                  <button
+                    style="
+                      background-color: rgb(117, 6, 6);
+                      color: white;
+                      padding: 5px;
+                      border: 1px solid white;
+                    "
+                    @click="perpanjang(user)"
+                  >
+                    edit</button
+                  ><br />
+                  <button
+                    style="
+                      background-color: rgb(236, 43, 43);
+                      color: white;
+                      width: 80px;
+                      padding: 5px;
+                      border: 1px solid white;
+                    "
+                    @click="kembali(user)"
+                  >
+                    hapus
+                  </button>
+                </td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -233,10 +217,14 @@ export default {
 <style scoped>
 .app {
   border: 1px solid none;
-  background-color: rgb(236, 43, 43);
+  background-color: #a7a7a7;
   padding: 10px;
-  margin: 40px;
+  margin: 10px;
   font-family: initial;
+  width: 1120px;
+}
+.up {
+  margin-top: 0px;
 }
 .snia {
   display: flex;
@@ -246,6 +234,7 @@ export default {
 }
 h1 {
   font-family: serif;
+  text-align: center;
 }
 
 .border1 {
@@ -266,23 +255,24 @@ h1 {
 }
 
 table {
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 20px;
-  width: 700px;
+  width: 1010px;
   border-collapse: collapse;
   background-color: white;
 }
 
 th {
-  border: 1px solid none;
+  border: 1px solid black;
   height: 70px;
   font-family: sans-serif;
   color: black;
   background-color: white;
+  text-align: center;
 }
 
 td {
-  border: 1px solid black none;
+  border: 1px solid black;
   text-align: center;
 }
 

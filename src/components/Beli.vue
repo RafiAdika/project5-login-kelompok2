@@ -1,80 +1,124 @@
 <template>
   <div>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333"
-    >
-      <!-- Text slides with image -->
-      <b-carousel-slide
-        caption=""
-        text=""
-        img-src="https://imgcdn.oto.com/medium/gallery/exterior/73/979/honda-revo-99509.jpg"
+    <div class="sidebarr">
+      <div class="nav"></div>
+      <a href="/"
+        ><button class="btnn">
+          <i
+            style="margin-right: 5px; color: yellow"
+            class="fa fa-home"
+          ></i></button
+        ><br
+      /></a>
+      <a href="/InfoMotorAdmin"
+        ><button class="btnn">
+          <i
+            style="margin-right: 5px; color: silver"
+            class="fa fa-motorcycle"
+          ></i></button
+        ><br
+      /></a>
+      <a href="/Beli"
+        ><button class="btnn">
+          <i
+            style="margin-right: 5px; color: lightgreen"
+            class="fa fa-money"
+          ></i></button
+        ><br
+      /></a>
+      <a href="/peduli"
+        ><button class="btnn">
+          <i
+            style="margin-right: 5px; color: red"
+            class="fa fa-heart"
+          ></i></button
+        ><br
+      /></a>
+      <a href="/login"
+        ><button class="btnn">
+          <i
+            style="margin-right: 5px; color: silver"
+            class="fa fa-sign-out"
+          ></i></button
+        ><br
+      /></a>
+    </div>
+    <div class="up">
+      <b-carousel
+        id="carousel-1"
+        v-model="slide"
+        :interval="4000"
+        controls
+        indicators
+        background="#ababab"
+        img-width="1024"
+        img-height="480"
+        style="text-shadow: 1px 1px 2px #333"
       >
-        <h1>Honda Revo FI</h1>
-      </b-carousel-slide>
+        <!-- Text slides with image -->
+        <b-carousel-slide
+          caption=""
+          text=""
+          img-src="https://imgcdn.oto.com/medium/gallery/exterior/73/979/honda-revo-99509.jpg"
+        >
+          <h1>Honda Revo FI</h1>
+        </b-carousel-slide>
 
-      <!-- Slides with custom text -->
-      <b-carousel-slide
-        img-src="https://www.otomotifo.com/wp-content/uploads/2017/05/Harga-Honda-Beat-2020.jpg"
-      >
-        <h1>All New Honda Beat</h1>
-      </b-carousel-slide>
+        <!-- Slides with custom text -->
+        <b-carousel-slide
+          img-src="https://www.otomotifo.com/wp-content/uploads/2017/05/Harga-Honda-Beat-2020.jpg"
+        >
+          <h1>All New Honda Beat</h1>
+        </b-carousel-slide>
 
-      <!-- Slides with image only -->
-      <b-carousel-slide
-        img-src="https://dapurpacu.id/wp-content/uploads/2021/04/home-banner-9-16042021-063913.jpg"
-      >
-        <h1>New Honda Vario 125</h1>
-      </b-carousel-slide>
+        <!-- Slides with image only -->
+        <b-carousel-slide
+          img-src="https://dapurpacu.id/wp-content/uploads/2021/04/home-banner-9-16042021-063913.jpg"
+        >
+          <h1>New Honda Vario 125</h1>
+        </b-carousel-slide>
 
-      <!-- Slides with img slot -->
-      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-      <b-carousel-slide>
-        <template #img>
-          <img
-            class="d-block img-fluid w-100"
-            width="500"
-            height="480"
-            src="https://lh3.googleusercontent.com/proxy/9YmRopfeH1ywk67zY0K6ifrpOER1Z8eTG5fwGyYhBUF26s6wZiDuUibOD3MDgGEKe1-v3INPYUCjwf22ZS_aZiA4wp07QOxaBQAPCRuYBIE0SwMOgt5pt425qf1BTMdAFqHq"
-            alt="image slot"
-          />
-        </template>
-        <h1>Honda CBR 250 RR</h1>
-      </b-carousel-slide>
+        <!-- Slides with img slot -->
+        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+        <b-carousel-slide>
+          <template #img>
+            <img
+              class="d-block img-fluid w-100"
+              width="500"
+              height="480"
+              src="https://i2.wp.com/warungasep.net/wp-content/uploads/2020/07/honda-cbr250rr-2021.png?ssl=1"
+              alt="image slot"
+            />
+          </template>
+          <h1>Honda CBR 250 RR</h1>
+        </b-carousel-slide>
 
-      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-      <b-carousel-slide
-        img-src="https://imgcdnblog.carbay.com/wp-content/uploads/2021/04/05081854/Honda-Scoopy-Vs-Genio-500x333.jpg"
-        width="200"
-      >
-        <h1>Honda Scoopy Genio</h1>
-      </b-carousel-slide>
-    </b-carousel>
+        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+        <b-carousel-slide
+          img-src="https://imgcdnblog.carbay.com/wp-content/uploads/2021/04/05081854/Honda-Scoopy-Vs-Genio-500x333.jpg"
+          width="200"
+        >
+          <h1>Honda Scoopy Genio</h1>
+        </b-carousel-slide>
+      </b-carousel>
 
-    <div class="app">
-      <div class="snia">
-        <div class="sa">
-          <img
-            src="https://cdn.krjogja.com/wp-content/uploads/2016/06/HONDA7-1.png"
-            height="125px"
-            width="240px"
-          />
+      <div class="app">
+        <div class="snia">
+          <div class="sa">
+            <img
+              src="https://cdn.krjogja.com/wp-content/uploads/2016/06/HONDA7-1.png"
+              height="125px"
+              width="240px"
+            />
+          </div>
+          <div class="tu">
+            <h1 style="text-align: center">
+              Selamat Datang di <br />
+              <span><b>~ PT.ASTRA ANDA MOTOR ~</b></span>
+            </h1>
+          </div>
         </div>
-        <div class="tu">
-          <h1 style="text-align: center">
-            Selamat Datang di <br />
-            <span><b>~ PT.ASTRA ANDA MOTOR ~</b></span>
-          </h1>
-        </div>
-      </div>
-
+        <!-- 
       <div class="pr">
         <div class="border1 row">
           <h1>Form Motor</h1>
@@ -135,7 +179,7 @@
             <label><b>Angsuran:</b></label
             ><br />
             <input
-              style="width: 300px"
+              style="width: 250px; margin-left: -10px"
               placeholder="Angsuran..."
               type="text"
               v-model="angsuran"
@@ -158,23 +202,22 @@
           >
             <b> Update </b>
           </button>
-          <!-- jika tombol edit di klik maka tombol add akan berubah menjadi update -->
           <br />
-        </div>
+        </div> -->
 
         <div class="border2">
-          <h1>Tabel Motor</h1>
+          <h1><b>Tabel Beli</b></h1>
 
           <table>
             <thead>
               <tr>
                 <th>No</th>
-                <th style="width: 100px">Nama Motor</th>
-                <th style="width: 50px">Dp</th>
-                <th style="width: 100px">Angsuran</th>
+                <th>Nama Motor</th>
+                <th>Dp</th>
+                <th>Angsuran</th>
                 <th>Bulan Angsuran</th>
                 <th>Total Harga</th>
-                <th style="width: 100px">Aksi</th>
+                <th>Aksi</th>
               </tr>
             </thead>
 
@@ -189,7 +232,7 @@
                 <td>
                   <button
                     style="
-                      background-color: rgb(117, 6, 6);
+                      background-color: #b3b3b3;
                       color: white;
                       padding: 5px;
                       border: 1px solid white;
@@ -201,7 +244,7 @@
                   <button
                     v-on:click="deleteData(user.id)"
                     style="
-                      background-color: rgb(236, 43, 43);
+                      background-color: #2e2e2e;
                       color: white;
                       width: 80px;
                       padding: 5px;
@@ -218,6 +261,7 @@
       </div>
     </div>
   </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -306,10 +350,11 @@ export default {
 <style scoped>
 .app {
   border: 1px solid none;
-  background-color: rgb(236, 43, 43);
+  background-color: #a7a7a7;
   padding: 10px;
   margin: 40px;
   font-family: initial;
+  width: 1120px;
 }
 .snia {
   display: flex;
@@ -330,6 +375,7 @@ h1 {
 .border2 {
   width: 40%;
   padding: 30px;
+  text-align: center;
 }
 
 .row:after {
@@ -341,9 +387,10 @@ h1 {
 table {
   border: 1px solid white;
   padding: 20px;
-  width: 700px;
+  width: 1000px;
   border-collapse: collapse;
   background-color: white;
+  text-align: center;
 }
 
 th {
@@ -384,7 +431,7 @@ select {
 
 button[type="submit"] {
   width: 100%;
-  background-color: rgb(117, 6, 6);
+  background-color: #2e2e2e;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -395,7 +442,7 @@ button[type="submit"] {
 
 button[type="button"] {
   width: 100%;
-  background-color: #00bfff;
+  background-color: #2e2e2e;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -408,5 +455,8 @@ button[type="button"] {
 }
 span {
   background-color: white;
+}
+.up {
+  margin-top: 0px;
 }
 </style>

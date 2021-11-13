@@ -1,5 +1,47 @@
+
 <template>
-  <div>
+  <div class="sidebarr">
+    <div class="nav"></div>
+    <a href="/homeadmin"
+      ><button class="btnn">
+        <i
+          style="margin-right: 5px; color: yellow"
+          class="fa fa-home"
+        ></i></button
+      ><br
+    /></a>
+    <a href="/InfoMotorAdmin"
+      ><button class="btnn">
+        <i
+          style="margin-right: 5px; color: silver"
+          class="fa fa-motorcycle"
+        ></i></button
+      ><br
+    /></a>
+    <a href="/Beli"
+      ><button class="btnn">
+        <i
+          style="margin-right: 5px; color: lightgreen"
+          class="fa fa-money"
+        ></i></button
+      ><br
+    /></a>
+    <a href="/peduli"
+      ><button class="btnn">
+        <i
+          style="margin-right: 5px; color: red"
+          class="fa fa-heart"
+        ></i></button
+      ><br
+    /></a>
+    <a href="/login"
+      ><button class="btnn">
+        <i
+          style="margin-right: 5px; color: silver"
+          class="fa fa-sign-out"
+        ></i></button
+      ><br
+    /></a>
     <div class="up">
       <div class="g">
         <div class="bn">
@@ -188,7 +230,7 @@
 
 <script>
 export default {
-  name: "home",
+  name: "homeadmin",
 };
 </script>
 
