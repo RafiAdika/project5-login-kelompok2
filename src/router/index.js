@@ -9,6 +9,7 @@ import dashboard from "@/components/dashboard.vue"
 import InfoMotorAdmin from "@/components/InfoMotorAdmin.vue"
 import BeliUser from "@/components/BeliUser.vue"
 import homeadmin from "@/components/homeadmin.vue"
+import register from "@/components/register.vue"
 Vue.use(Router)
 
 function configRoutes() {
@@ -57,6 +58,11 @@ function configRoutes() {
             path: "/homeadmin",
             name: 'homeadmin',
             component: homeadmin
+        },
+        {
+            path: "/register",
+            name: 'register',
+            component: register
         },
     ]
 }

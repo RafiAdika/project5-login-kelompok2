@@ -68,6 +68,7 @@
                       type="text"
                       v-model="form.judul"
                       placeholder="Masukan judul "
+                      required
                     /><br />
                     <label for=""><b>Paragraf 1:</b></label
                     ><br />
@@ -75,6 +76,7 @@
                       type="text"
                       v-model="form.para1"
                       placeholder="Masukan para1  "
+                      required
                     /><br />
                     <label for=""><b>Paragraf 2:</b></label
                     ><br />
@@ -82,6 +84,7 @@
                       type="text"
                       v-model="form.para2"
                       placeholder="Masukan para2 "
+                      required
                     /><br />
                     <button
                       type="submit"

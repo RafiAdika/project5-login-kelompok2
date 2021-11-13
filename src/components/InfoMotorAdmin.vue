@@ -72,6 +72,7 @@
                 type="text"
                 v-model="form.motor"
                 placeholder=" Masukan Merk Motor"
+                required
               /><br />
               <label for=""><b>CC:</b></label
               ><br />
@@ -79,6 +80,7 @@
                 type="text"
                 v-model="form.cc"
                 placeholder="Masukan CC Motor"
+                required
               /><br />
               <label for=""><b>Tahun Produksi:</b></label
               ><br />
@@ -86,6 +88,7 @@
                 type="text"
                 v-model="form.tahun"
                 placeholder="Masukan Tahun Produksi Motor"
+                required
               /><br />
               <label for=""><b>Gambar:</b></label
               ><br />
@@ -93,6 +96,7 @@
                 type="text"
                 v-model="form.gambar"
                 placeholder="Masukan Link Gambar Motor"
+                required
               /><br />
               <label for=""><b>Harga</b></label
               ><br />
@@ -100,6 +104,7 @@
                 type="text"
                 v-model="form.harga"
                 placeholder="Masukan Harga Motor"
+                required
               /><br />
               <button type="submit" v-show="!updateSubmit" style="margin: auto">
                 <b> Lihat Motor </b>

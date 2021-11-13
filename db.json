@@ -25,20 +25,20 @@
       "harga": "17670000"
     },
     {
-      "id": 4,
-      "motor": "Scoopy Genio",
-      "cc": "110",
-      "tahun": "2019",
-      "gambar": "https://cdn.idntimes.com/content-images/post/20190622/genio1-97dbbcec473f1b883b5bcaa424349914.JPG",
-      "harga": "17000000"
-    },
-    {
       "id": 5,
       "motor": "CBR250RR",
       "cc": "249,7",
       "tahun": "2017",
       "gambar": "https://i2.wp.com/warungasep.net/wp-content/uploads/2020/07/honda-cbr250rr-2021.png?ssl=1",
       "harga": "72800000"
+    },
+    {
+      "motor": "mio",
+      "cc": "150",
+      "tahun": "2015",
+      "gambar": "https://w7.pngwing.com/pngs/57/523/png-transparent-pink-honda-beat-motor-scooter-honda-beat-fuel-injection-car-scooter-scooter-motorcycle-vehicle-honda-cbr150r.png",
+      "harga": "15.000..000",
+      "id": 6
     }
   ],
   "beli": [
@@ -81,6 +81,38 @@
       "bulanAngsuran": "12",
       "totalHarga": "72800000",
       "id": 5
+    },
+    {
+      "motor": "mio",
+      "dp": "30",
+      "angsuran": 0.1875,
+      "bulanAngsuran": "24",
+      "totalHarga": "15.000..000",
+      "id": 6
+    },
+    {
+      "motor": "",
+      "dp": "",
+      "angsuran": "",
+      "bulanAngsuran": "",
+      "totalHarga": "",
+      "id": 7
+    },
+    {
+      "motor": "",
+      "dp": "",
+      "angsuran": "",
+      "bulanAngsuran": "",
+      "totalHarga": "",
+      "id": 8
+    },
+    {
+      "motor": "",
+      "dp": "",
+      "angsuran": "",
+      "bulanAngsuran": "",
+      "totalHarga": "",
+      "id": 9
     }
   ],
   "masuk": [
@@ -96,6 +128,26 @@
       "para1": "Sepeda motor kini bukan hanya menjadi sarana transportasi produktif bagi masyarakat Indonesia. Sepeda motor sudah menjadi bagian dari hobi dan gaya hidup, bahkan bisa mengantarkan pada prestasi tertentu yang membanggakan. Untuk menemani masyarakat beraktivitas dan menggapai beragam mimpinya, PT Astra Anda Motor menghadirkan solusi mobilitas bagi masyarakat dengan produk dan layanan terbaik. Sejak pertama kali hadir di Indonesia, sepeda motor Honda selalu dicintai dan dipercaya menjadi partner berkendara masyarakat. Berbekal kepercayaan ini, PT Astra Anda Motor secara konsisten melakukan inovasi pada produk dan teknologinya, terus meningkatkan layanan di jaringan penjualan dan purna jual Honda, serta intens beraktivitas dan berkomunikasi dengan masyarakat melalui berbagai platform.",
       "para2": "Sebagai bagian dari bangsa Indonesia, PT Astra Anda Motor senantiasa memperkuat kontribusinya di berbagai bidang, seperti keselamatan berkendara, pendidikan, lingkungan, dan pemberdayaan masyarakat. Diharapkan perusahaan akan terus tumbuh dan berkembang bersama masyarakat dan dapat menjadi salah satu perusahaan kebanggaan bangsa Indonesia.",
       "id": 1
+    },
+    {
+      "id": 2,
+      "judul": "",
+      "para1": "",
+      "para2": ""
+    },
+    {
+      "id": 3,
+      "judul": "",
+      "para1": "",
+      "para2": ""
+    }
+  ],
+  "register": [
+    {
+      "id": 1,
+      "username": "",
+      "email": "",
+      "password": ""
     }
   ]
 }

@@ -55,6 +55,7 @@
                 class="form-select"
                 aria-label="Default select example"
                 v-model="selected"
+                required
               >
                 <option
                   v-for="(data, index) in listMotor"

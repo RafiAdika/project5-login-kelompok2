@@ -5,9 +5,10 @@
     </div>
 
     <div class="topnav">
-      <a href="/BeliUser">Beli Kendaraan</a>
       <a href="/InfoMotor">Info Kendaraan</a>
+      <a href="/BeliUser">Beli Kendaraan</a>
       <a href="/login" style="float: right">Login</a>
+      <a href="/register" style="float: right">Register</a>
     </div>
   </div>
 </template>
